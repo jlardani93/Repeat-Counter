@@ -19,9 +19,14 @@ Repeat-Counter is a web application built with C# Asp Net Core MVC framework. Us
 
 ## Specifications
 
-### Program finds indexes within sentence that are equal to the first character in the input word
-* _Example Input: word: "tree" and sentence: "I want coffee."_
-* _Example Output: 5_
+###Program finds first index within sentence that is equal to the first character in the input word
+* _Example Input: word: "t"; sentence: "want"_
+* _Example Output: 3_
+* _This input will ensure that the program can iterate through a word and find the index of a matching character_
+
+### Program finds all indexes within sentence that are equal to the first character in the input word
+* _Example Input: word: "tree" and sentence: "I want coffee today."_
+* _Example Output: List<int> {5, 14}_
 * _This input will ensure that the program correctly searches for the first letter of a word_
 
 ###Program identifies whether a substring is equal to the input word

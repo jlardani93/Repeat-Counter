@@ -1,0 +1,13 @@
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Repeat-Counter.Tests.deps.json
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Repeat-Counter.Tests.runtimeconfig.json
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Repeat-Counter.Tests.runtimeconfig.dev.json
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/obj/Debug/netcoreapp1.1/Repeat-Counter.Tests.AssemblyInfo.cs
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Repeat-Counter.Tests.dll
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Repeat-Counter.Tests.pdb
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Repeat-Counter.dll
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/bin/Debug/netcoreapp1.1/Repeat-Counter.pdb
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/obj/Debug/netcoreapp1.1/Repeat-Counter.Tests.dll
+/Users/Guest/Desktop/Repeat-Counter.Solution/Repeat-Counter.Tests/obj/Debug/netcoreapp1.1/Repeat-Counter.Tests.pdb

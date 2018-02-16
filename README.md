@@ -30,12 +30,12 @@ Repeat-Counter is a web application built with C# Asp Net Core MVC framework. Us
 * _This input will ensure that the program correctly searches for the first letter of a word_
 
 ###Program identifies whether a substring is equal to the input word
-* _Example Input: "apple" and "the anvil".Substring(4, 5)_
+* _Example Input: "apple" and "the apple".Substring(4, 5)_
 * _Example Output: false_
 * _This input will ensure that the program can correctly find substrings within a sentence and compare it to an input word_
 
 ###Program counts the number of substrings within the sentence that are equal to the input word
-* _Example Input: word: "cat"; sentence: "Cats are larger than caterpillars."_
+* _Example Input: word: "cat"; sentence: "cats are larger than caterpillars."_
 * _Example Output: 2_
 * _This input will ensure that the program can find more than one instance of the word within the sentence_
 

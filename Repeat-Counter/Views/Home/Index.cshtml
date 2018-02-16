@@ -1,0 +1,21 @@
+@using RepeatCounterProject.Models;
+@{
+  Layout = "_Layout";
+}
+
+@if (RepeatCounter.GetUserWord() != null)
+{
+  <div class=container>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>The Sentence "@RepeatCounter.GetUserSentence()" contains @RepeatCounter.GetRepeatCount() instance(s) of the word "@RepeatCounter.GetUserWord()".</h2><br>
+        <a href="/RepeatCounter/Form"><button type="button" class="btn">Resubmit Form</button></a>
+      </div>
+    </div>
+  </div>
+}
+else
+{
+  <h2>With this application you will be able to figure out how many times an input word shows up within an input sentence</h2>
+  <a href="/RepeatCounter/Form"><button type="button" class="btn">Try It Out!</button></a>
+}

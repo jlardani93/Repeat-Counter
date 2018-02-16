@@ -11,42 +11,44 @@ namespace RepeatCounterProject.TestTools
     [TestMethod]
     public void FindFirstIndex_ReturnsIndexOfEqualChar_True()
     {
-      string testString = "want";
+      RepeatCounter.SetUserSentence("want");
+      RepeatCounter.SetUserWord("t");
       int result = 3;
-      Assert.AreEqual(result, RepeatCounter.FindFirstIndex("t", testString));
+      Assert.AreEqual(result, RepeatCounter.FindFirstIndex());
     }
 
     [TestMethod]
     public void GetIndexes_ReturnsAllIndexValuesWithEqualChar_True()
     {
-      string testString = "I want coffee today.";
+      RepeatCounter.SetUserSentence("I want coffee today.");
+      RepeatCounter.SetUserWord("tree");
       List<int> result = new List<int>(){5, 14};
-      CollectionAssert.AreEqual(result, RepeatCounter.GetIndexes("tree", testString));
+      CollectionAssert.AreEqual(result, RepeatCounter.GetIndexes());
     }
 
     [TestMethod]
     public void SubstringIsEqual_ReturnsBool_True()
     {
-      string userWord = "apple";
+      RepeatCounter.SetUserWord("apple");
+      RepeatCounter.SetUserSentence("the apple");
       int startingIndex = 4;
-      string testString = "the apple";
-      Assert.AreEqual(true, RepeatCounter.SubstringIsEqual(userWord, testString, startingIndex));
+      Assert.AreEqual(true, RepeatCounter.SubstringIsEqual(startingIndex));
     }
 
     [TestMethod]
     public void GetRepeatCount_ReturnNumberOfRepeats_True()
     {
-      string userWord = "cat";
-      string testString = "The cat is larger than a caterpillar.";
-      Assert.AreEqual(1, RepeatCounter.GetRepeatCount(userWord, testString));
+      RepeatCounter.SetUserWord("cat");
+      RepeatCounter.SetUserSentence("The cat is larger than a caterpillar.");
+      Assert.AreEqual(1, RepeatCounter.GetRepeatCount());
 
-      userWord = "an";
-      testString = "    ";
-      Assert.AreEqual(0, RepeatCounter.GetRepeatCount(userWord, testString));
+      RepeatCounter.SetUserWord("a");
+      RepeatCounter.SetUserSentence("");
+      Assert.AreEqual(0, RepeatCounter.GetRepeatCount());
 
-      userWord = "an";
-      testString = "anna and annette the ant android are an awesome pair";
-      Assert.AreEqual(1, RepeatCounter.GetRepeatCount(userWord, testString));
+      RepeatCounter.SetUserWord("an");
+      RepeatCounter.SetUserSentence("anna and annette the ant android are an awesome pair");
+      Assert.AreEqual(1, RepeatCounter.GetRepeatCount());
     }
   }
 }

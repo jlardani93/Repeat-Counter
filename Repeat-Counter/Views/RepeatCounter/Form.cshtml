@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form action="/RepeatCounter/Display" method="post">
+        <div class="form-group">
+          <label for="userWord">Insert a Word: </label>
+          <input type="text" name="userWord" id="userWord" required>
+        </div>
+        <div class="form-group">
+          <label for="userSentence">Inser a Sentence: </label>
+          <input type="text" name="userSentence" id="userSentence" required>
+        </div>
+        <button type="submit" class="btn">See Result</button>
+      </form>
+    </div>
+  </div>
+</div>

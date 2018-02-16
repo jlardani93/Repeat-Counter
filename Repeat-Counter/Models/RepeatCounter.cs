@@ -6,11 +6,34 @@ namespace RepeatCounterProject.Models
 {
   public class RepeatCounter
   {
-    public static int FindFirstIndex(string userWord, string userSentence)
+    private static string _userSentence;
+    private static string _userWord;
+
+    public static void SetUserSentence(string userSentence)
     {
-      for (int i = 0; i < userSentence.Length; i++)
+      _userSentence = userSentence;
+    }
+
+    public static void SetUserWord(string userWord)
+    {
+      _userWord = userWord;
+    }
+
+    public static string GetUserSentence()
+    {
+      return _userSentence;
+    }
+
+    public static string GetUserWord()
+    {
+      return _userWord;
+    }
+
+    public static int FindFirstIndex()
+    {
+      for (int i = 0; i < _userSentence.Length; i++)
       {
-        if (userSentence[i] == userWord[0])
+        if (_userSentence[i] == _userWord[0])
         {
           return i;
         }
@@ -18,13 +41,13 @@ namespace RepeatCounterProject.Models
       return -1;
     }
 
-    public static List<int> GetIndexes(string userWord, string userSentence)
+    public static List<int> GetIndexes()
     {
       List<int> indexes = new List<int>();
 
-      for (int i = 0; i < userSentence.Length; i++)
+      for (int i = 0; i < _userSentence.Length; i++)
       {
-        if (userSentence[i] == userWord[0])
+        if (_userSentence[i] == _userWord[0])
         {
           indexes.Add(i);
         }
@@ -32,10 +55,10 @@ namespace RepeatCounterProject.Models
       return indexes;
     }
 
-    public static bool SubstringIsEqual(string userWord, string userSentence, int index)
+    public static bool SubstringIsEqual(int index)
     {
-      string substring = userSentence.Substring(index, userWord.Length);
-      return (userWord.Equals(substring));
+      string substring = _userSentence.Substring(index, _userWord.Length);
+      return (_userWord.Equals(substring));
     }
 
     public static bool SubstringIsWord(string sentence, int startIndex, int endIndex)
@@ -70,19 +93,19 @@ namespace RepeatCounterProject.Models
       return false;
     }
 
-    public static int GetRepeatCount(string userWord, string userSentence)
+    public static int GetRepeatCount()
     {
-      List<int> indexes = GetIndexes(userWord, userSentence);
+      List<int> indexes = GetIndexes();
       int repeatCount = 0;
 
-      if (userWord.Length > userSentence.Length)
+      if (_userWord.Length > _userSentence.Length)
       {
         return 0;
       }
 
       foreach (int i in indexes)
       {
-        if (SubstringIsEqual(userWord, userSentence, i) && SubstringIsWord(userSentence, i, i+(userWord.Length-1)))
+        if (SubstringIsEqual(i) && SubstringIsWord(_userSentence, i, i+(_userWord.Length-1)))
         {
           repeatCount ++;
         }
